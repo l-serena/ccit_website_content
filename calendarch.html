@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
   <meta charset="utf-8">
@@ -9,19 +9,37 @@
 
   <title>PBHA – Chinatown Citizenship</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <link rel="icon" href="assets/images/favicon.png">
 
-  <!-- Custom styles for this template -->
-  <link href="css/styles.css" rel="stylesheet">
-  <link rel="icon" href="images/favicon.png">
+  <style>
+    a {
+      word-wrap: break-word;
+    }
+  </style>
 </head>
 
-<body>
+<body class="has-lang-banner">
+  <div id="lang-banner" class="lang-banner">
+    <div class="lang-banner__group">
+      <span class="lang-banner__btn lang-banner__btn--active">中文 Chinese</span>
+      <a href="calendar.html" class="lang-banner__btn">English</a>
+    </div>
+  </div>
+
   <!-- Navigation Import--><div id="nav-placeholder"></div><!--End Navigation Import-->
 
-  <table class="table table-bordered" style="table-layout: fixed; padding: 0; font-size: 12px">
+  <div class="container" style="text-align:center">
+    <br>
+    <div class="jumbotron" style="padding:2%; background-color: #e8f0ff;">
+      <div class="container" style="text-align: center">
+        <b style="font-size: 30px">日历</b>
+        <hr>
+        <b>课程时间表如下。如需进入教室，请点击链接，并确保您的 Zoom 用户名与注册时使用的姓名一致。</b>
+      </div>
+    </div>
+    <table class="table table-bordered" style="table-layout: fixed; padding: 0; font-size: 12px">
       <thead class="table-primary">
         <tr>
           <th scope="col">星期五 <br/> 3 - 4:30 PM</th>
@@ -34,11 +52,12 @@
       </thead>
       <tbody>
         <tr>
-          <td></td>
+          <th scope="row"></th>
           <td></td>
           <td></td>
           <td>Michelle Wu / Cassidy Cheng</td>
           <td>Anna MacLennan / Gary Wu</td>
+          <td></td>
         </tr>
       </tbody>
       <thead class="table-primary">
@@ -122,20 +141,19 @@
         </tr>
       </tbody>
     </table>
+    <br/>
+  </div>
 
   <!-- Footer Import--><div id="footer-placeholder"></div><!--End Footer Import-->
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script>
     $(function(){
-      $("#nav-placeholder").load("https://pbhachinatowncitizenship.com/import/navch.html");
-      $("#footer-placeholder").load("https://pbhachinatowncitizenship.com/import/footer.html");
+      $("#nav-placeholder").load("includes/navch.html");
+      $("#footer-placeholder").load("includes/footer.html");
     });
   </script>
-
 </body>
 
 </html>

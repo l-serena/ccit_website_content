@@ -1,8 +1,12 @@
 {
 	"folders": [
 		{
-			"name": "ccit",
+			"name": "main site",
 			"path": "."
+		},
+		{
+			"name": "resources",
+			"path": "resources"
 		}
 	],
 	"settings": {}

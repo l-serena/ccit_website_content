@@ -2,5 +2,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/pbhabths/public_html/
-    - /bin/cp -R * $DEPLOYPATH
+    - export MAINDEPLOYPATH=/home/pbhabths/public_html/
+    - /bin/cp index.html indexch.html calendar.html calendarch.html classes.html classesch.html contact.html contactch.html learn.html learnch.html teach.html teachch.html $MAINDEPLOYPATH
+    - /bin/cp -R assets includes resources $MAINDEPLOYPATH

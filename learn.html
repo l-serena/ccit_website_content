@@ -9,36 +9,30 @@
 
   <title>Sign Up — Learn</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/styles.css" rel="stylesheet">
-  <link rel="icon" href="images/favicon.png">
-  
-</head>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <link rel="icon" href="assets/images/favicon.png">
 </head>
 
-<body>
-  <div style="height: 85vh">
+<body class="has-lang-banner">
+  <div id="lang-banner" class="lang-banner">
+    <div class="lang-banner__group">
+      <a href="learnch.html" class="lang-banner__btn">中文 Chinese</a>
+      <span class="lang-banner__btn lang-banner__btn--active">English</span>
+    </div>
+  </div>
+
   <!-- Navigation Import--><div id="nav-placeholder"></div><!--End Navigation Import-->
 
-  <!-- Page Content -->
-  <div id="mybutton">
-    <form action="learnch.html">
-      <button class="ch" type="submit">Chinese (中文)</button>
-    </form>
-  </div>
   <div class="container" style="text-align:center">
     <br>
     <div class="jumbotron" style="padding:2%; background-color: #e8f0ff;">
-        <div class="container" style="text-align: center">
-            <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 30px">Sign Up — Learn</b>
-            <hr>
-            <b style="font-family: 'Source Sans Pro', sans-serif;">Fill out the sign up form to register for classes. We will email you with further information regarding your classes (logistics and links) upon receiving your form.</b>
-            <br/><br/>
-        </div>
+      <div class="container" style="text-align: center">
+        <b style="font-size: 30px">Sign Up — Learn</b>
+        <hr>
+        <b>Fill out the sign up form to register for classes. We will email you with further information regarding your classes (logistics and links) upon receiving your form.</b>
+        <br/><br/>
+      </div>
     </div>
   </div>
   <div class="container" style="height: 50vh">
@@ -46,13 +40,13 @@
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <b style="font-family: 'Source Sans Pro', sans-serif;">We recommend that you fill out this survey; it will match a class to your level. </b>
+            <b>We recommend that you fill out this survey; it will match a class to your level.</b>
             <br/><br/>
-            <a target=_blank href=https://harvard.az1.qualtrics.com/jfe/form/SV_7UMdYVjCV1YfEVv><button type="button" class="btn btn-primary">CCit Assessment</button></a>
+            <a target="_blank" href="https://harvard.az1.qualtrics.com/jfe/form/SV_7UMdYVjCV1YfEVv"><button type="button" class="btn btn-primary">CCit Assessment</button></a>
             <br/><br/>
           </div>
           <div class="col-sm">
-            <b style="font-family: 'Source Sans Pro', sans-serif;">Fill out the form below to register for classes. </b>
+            <b>Fill out the form below to register for classes.</b>
             <br/><br/>
             <a href="https://forms.gle/MxoHY1yKW7T2bUQS7"><button type="button" class="btn btn-danger">Sign Up</button></a>
             <br/><br/>
@@ -61,19 +55,17 @@
       </div>
     </div>
   </div>
-  </div>
+
   <!-- Footer Import--><div id="footer-placeholder"></div><!--End Footer Import-->
+
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("includes/nav.html");
+      $("#footer-placeholder").load("includes/footer.html");
+    });
+  </script>
 </body>
-
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Import -->
-<script>
-  $(function(){
-    $("#nav-placeholder").load("https://pbhachinatowncitizenship.com/import/nav.html");
-    $("#footer-placeholder").load("https://pbhachinatowncitizenship.com/import/footer.html");
-  });
-</script>
 
 </html>

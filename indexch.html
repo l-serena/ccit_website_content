@@ -11,15 +11,22 @@
   <title>PBHA – Chinatown Citizenship</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
   <!-- Custom styles for this template -->
-  <link href="css/styles.css" rel="stylesheet">
-  <link rel="icon" href="images/favicon.png">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <link rel="icon" href="assets/images/favicon.png">
 </head>
 
-<body>
+<body class="has-lang-banner">
+  <div id="lang-banner" class="lang-banner">
+    <div class="lang-banner__group">
+      <span class="lang-banner__btn lang-banner__btn--active">中文 Chinese</span>
+      <a href="index.html" class="lang-banner__btn">English</a>
+    </div>
+  </div>
+
+
   <!-- Navigation Import--><nav id="nav-placeholder"></nav><!--End Navigation Import-->
 
   <header>
@@ -31,21 +38,21 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('images/2019fall.jpg')">
+        <div class="carousel-item active" style="background-image: url('assets/images/2019fall.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h3 style="font-family: 'Source Sans Pro', sans-serif;">2019 Fall Sunday Class</h3>
+            <h3>2019 Fall Sunday Class</h3>
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('images/2020class.JPG')">
+        <div class="carousel-item" style="background-image: url('assets/images/2020class.JPG')">
           <div class="carousel-caption d-none d-md-block">
-            <h3 style="font-family: 'Source Sans Pro', sans-serif;">2020 Citizenship English Class</h3>
+            <h3>2020 Citizenship English Class</h3>
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('images/summer2015.jpg')">
+        <div class="carousel-item" style="background-image: url('assets/images/summer2015.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h3 style="font-family: 'Source Sans Pro', sans-serif;">2015 Summer Class</h3>
+            <h3>2015 Summer Class</h3>
           </div>
         </div>
       </div>
@@ -61,10 +68,7 @@
   </header>
 
   <!-- Page Content -->
-  <div id="mybutton">
-    <form action="index.html">
-      <button class="ch" type="submit">English (英文)</button>
-    </form>
+  
   </div>
   <div class="container" style="text-align:center">
     <br>
@@ -86,10 +90,10 @@
           <p>今年秋天，我们将提供 入籍英语，N400，美国历史的免费的在线课程，并提供一对一的模拟面试支持。 同时我们还将首次提供日常英语的练习课程。 如果您有兴趣参加我们的课程，请填写以下表格。
           </p>
           <br><br><br>
-          <a class="btn btn-lg btn-light btn-block" href="learnch.html" style="background-color:#e8f0ff; font-family: 'Source Sans Pro', sans-serif;">报名 - 学生</a>
+          <a class="btn btn-lg btn-light btn-block" href="learnch.html" style="background-color:#e8f0ff; ">报名 - 学生</a>
         </div>
         <div class="col-lg-6">
-          <img class="img-fluid rounded" src="images/onlineclasses.png" alt="">
+          <img class="img-fluid rounded" src="assets/images/onlineclasses.png" alt="">
         </div>
       </div>
     </div>
@@ -97,13 +101,13 @@
     <!-- Section that has cards describing exec /.row 
     <br>
     <div class = "section" style="padding:2%">
-      <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 30px"> 我们 </b>
+      <b style=" font-size: 30px"> 我们 </b>
       <hr>
       <br/>
 
           <div class="col-sm padding-0">
             <div class="card">
-              <img class="card-img-top" src="images/jared.png" alt="Jared Zheng">
+              <img class="card-img-top" src="assets/images/jared.png" alt="Jared Zheng">
               <div class="card-body">
                 <p class="card-text"><b> Jared Zheng <br> Technology Chair </b> <br></p>
                 <br/>
@@ -115,7 +119,7 @@
 
           <div class="col-sm padding-0">
               <div class="card">
-                <img class="card-img-top" src="images/abby.jpeg" alt="Abby Luo">
+                <img class="card-img-top" src="assets/images/abby.jpeg" alt="Abby Luo">
                 <div class="card-body">
                   <p class="card-text"><b> Abby Luo <br> Student Recruitment Chair </b><br></p>
                   <p style="font-size: 14px"> Wellesley 2025 <br><i> IR-Econ & Psychology </i></p>
@@ -126,7 +130,7 @@
         
           <div class="col-sm padding-0">
               <div class="card">
-                <img class="card-img-top" src="images/yinuo.jpg" alt="Yinuo Wang">
+                <img class="card-img-top" src="assets/images/yinuo.jpg" alt="Yinuo Wang">
                 <div class="card-body">
                   <p class="card-text"><b> Yinuo Wang <br> Curriculum Chair </b> <br></p>
                   <br/>
@@ -147,7 +151,7 @@
         
           <div class="col-sm padding-0">
             <div class="card">
-              <img class="card-img-top" src="images/vivian.jpg" alt="Vivian Chen">
+              <img class="card-img-top" src="assets/images/vivian.jpg" alt="Vivian Chen">
               <div class="card-body">
                 <p class="card-text"><b> Vivan Chen <br> Tutor Recruitment Chair </b> <br></p>
                 <br/>
@@ -167,13 +171,13 @@
   <!-- Footer Import--><footer id="footer-placeholder"></footer><!--End Footer Import-->
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <script>
     $(function(){
-      $("#nav-placeholder").load("https://pbhachinatowncitizenship.com/import/navch.html");
-      $("#footer-placeholder").load("https://pbhachinatowncitizenship.com/import/footer.html");
+      $("#nav-placeholder").load("includes/navch.html");
+      $("#footer-placeholder").load("includes/footer.html");
     });
   </script>
 

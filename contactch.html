@@ -11,24 +11,28 @@
   <title>Contact</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
   <!-- Custom styles for this template -->
-  <link href="css/styles.css" rel="stylesheet">
-  <link rel="icon" href="images/favicon.png">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <link rel="icon" href="assets/images/favicon.png">
 
 
 </head>
 
-<body>
+<body class="has-lang-banner">
+  <div id="lang-banner" class="lang-banner">
+    <div class="lang-banner__group">
+      <span class="lang-banner__btn lang-banner__btn--active">中文 Chinese</span>
+      <a href="contact.html" class="lang-banner__btn">English</a>
+    </div>
+  </div>
+
+
   <!-- Navigation Import--><nav id="nav-placeholder"></nav><!--End Navigation Import-->
 
   <body>
-    <div id="mybutton">
-      <form action="contact.html">
-        <button class="ch" type="submit">English (英文)</button>
-      </form>
+    
     </div>
       <div class="container" style="text-align:center">
         <br>
@@ -45,14 +49,14 @@
   <!-- Footer Import--><footer id="footer-placeholder"></footer><!--End Footer Import-->
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Import -->
   <script>
     $(function(){
-      $("#nav-placeholder").load("https://pbhachinatowncitizenship.com/import/navch.html");
-      $("#footer-placeholder").load("https://pbhachinatowncitizenship.com/import/footer.html");
+      $("#nav-placeholder").load("includes/navch.html");
+      $("#footer-placeholder").load("includes/footer.html");
     });
   </script>
 

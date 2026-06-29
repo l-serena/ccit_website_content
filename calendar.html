@@ -11,12 +11,11 @@
   <title>PBHA – Chinatown Citizenship</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
   <!-- Custom styles for this template -->
-  <link href="css/styles.css" rel="stylesheet">
-  <link rel="icon" href="images/favicon.png">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <link rel="icon" href="assets/images/favicon.png">
 
   <style>
     a {
@@ -26,21 +25,26 @@
 
 </head>
 
-<body>
+<body class="has-lang-banner">
+  <div id="lang-banner" class="lang-banner">
+    <div class="lang-banner__group">
+      <a href="calendarch.html" class="lang-banner__btn">中文 Chinese</a>
+      <span class="lang-banner__btn lang-banner__btn--active">English</span>
+    </div>
+  </div>
+
+
   <!-- Navigation Import--><div id="nav-placeholder"></div><!--End Navigation Import-->
 
     <div class="container" style="text-align:center">
-      <div id="mybutton">
-        <form action="calendarch.html">
-          <button class="ch" type="submit">Chinese (中文)</button>
-        </form>
+      
       </div>
       <br>
       <div class="jumbotron" style="padding:2%; background-color: #e8f0ff;">
         <div class="container" style="text-align: center">
-          <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 30px">Calendar</b>
+          <b style=" font-size: 30px">Calendar</b>
           <hr>
-          <b style="font-family: 'Source Sans Pro', sans-serif;">The class schedule is below. To enter the classroom, click the link and ensure that your Zoom name is the same as the name you registered with.</b>
+          <b>The class schedule is below. To enter the classroom, click the link and ensure that your Zoom name is the same as the name you registered with.</b>
         </div>
       </div>
       <table class="table table-bordered" style="table-layout: fixed; padding: 0; font-size: 12px">
@@ -150,14 +154,14 @@
   <!-- Footer Import--><div id="footer-placeholder"></div><!--End Footer Import-->
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Import -->
   <script>
     $(function(){
-      $("#nav-placeholder").load("https://pbhachinatowncitizenship.com/import/nav.html");
-      $("#footer-placeholder").load("https://pbhachinatowncitizenship.com/import/footer.html");
+      $("#nav-placeholder").load("includes/nav.html");
+      $("#footer-placeholder").load("includes/footer.html");
     });
   </script>
 

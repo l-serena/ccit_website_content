@@ -11,32 +11,36 @@
   <title>Contact</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
   <!-- Custom styles for this template -->
-  <link href="css/styles.css" rel="stylesheet">
-  <link rel="icon" href="images/favicon.png">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <link rel="icon" href="assets/images/favicon.png">
 
 
 </head>
 
-<body>
+<body class="has-lang-banner">
+  <div id="lang-banner" class="lang-banner">
+    <div class="lang-banner__group">
+      <a href="contactch.html" class="lang-banner__btn">中文 Chinese</a>
+      <span class="lang-banner__btn lang-banner__btn--active">English</span>
+    </div>
+  </div>
+
+
   <!-- Navigation Import--><nav id="nav-placeholder"></nav><!--End Navigation Import-->
 
   <body>
-      <div id="mybutton">
-        <form action="contactch.html">
-          <button class="ch" type="submit">Chinese (中文)</button>
-        </form>
+      
       </div>
       <div class="container" style="text-align:center">
         <br>
         <div class="jumbotron" style="padding:2%; background-color: #e8f0ff;">
             <div class="container" style="text-align: center">
-                <b style="font-family: 'Source Sans Pro', sans-serif; font-size: 30px">Contact Us</b>
+                <b style=" font-size: 30px">Contact Us</b>
                 <hr>
-                <b style="font-family: 'Source Sans Pro', sans-serif;">If you have any questions, submit the form below, and we'll respond via email as soon as possible!</b>
+                <b>If you have any questions, submit the form below, and we'll respond via email as soon as possible!</b>
             </div>
         </div>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScV-a8nilmi2NF9UphQrnMrNr3xInwgx4yiZig4dJuhNNrdrw/viewform?embedded=true" width="100%" height="840" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
@@ -45,14 +49,14 @@
   <!-- Footer Import--><div id="footer-placeholder"></div><!--End Footer Import-->
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Import -->
   <script>
     $(function(){
-      $("#nav-placeholder").load("https://pbhachinatowncitizenship.com/import/nav.html");
-      $("#footer-placeholder").load("https://pbhachinatowncitizenship.com/import/footer.html");
+      $("#nav-placeholder").load("includes/nav.html");
+      $("#footer-placeholder").load("includes/footer.html");
     });
   </script>
 

@@ -1,80 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Sign Up — Learn</title>
+  <title>报名 — 学生</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/styles.css" rel="stylesheet">
-  <link rel="icon" href="images/favicon.png">
-
-
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <link rel="icon" href="assets/images/favicon.png">
 </head>
 
-<body>
-  <div style="height: 85vh">
-  <!-- Navigation Import--><nav id="nav-placeholder"></nav><!--End Navigation Import-->
-
-  <!-- Page Content -->
-  <div id="mybutton">
-    <form action="learn.html">
-      <button class="ch" type="submit">English (英文)</button>
-    </form>
+<body class="has-lang-banner">
+  <div id="lang-banner" class="lang-banner">
+    <div class="lang-banner__group">
+      <span class="lang-banner__btn lang-banner__btn--active">中文 Chinese</span>
+      <a href="learn.html" class="lang-banner__btn">English</a>
+    </div>
   </div>
+
+  <!-- Navigation Import--><div id="nav-placeholder"></div><!--End Navigation Import-->
+
   <div class="container" style="text-align:center">
     <br>
     <div class="jumbotron" style="padding:2%; background-color: #e8f0ff;">
-        <div class="container" style="text-align: center">
-            <h3>报名 - 学生</h3>
-            <hr>
-            <p>填写下面的表格以注册课程。 收到您的表格后，我们将通过电子邮件向您提供有关您的课程的更多信息（物流和链接）。</p>
-        </div>
+      <div class="container" style="text-align: center">
+        <b style="font-size: 30px">报名 — 学生</b>
+        <hr>
+        <b>填写报名表以注册课程。收到您的表格后，我们将通过电子邮件向您提供有关课程的更多信息（上课安排和链接）。</b>
+        <br/><br/>
+      </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container" style="height: 50vh">
     <div class="section" style="text-align:center; padding-top: 2%">
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <b style="font-family: 'Source Sans Pro', sans-serif;">我们建议您填写此调查，因为它会与您当前的水平相匹配。</b>
+            <b>我们建议您填写此调查问卷，以便为您匹配适合水平的课程。</b>
             <br/><br/>
-            <a target=_blank href=https://harvard.az1.qualtrics.com/jfe/form/SV_7UMdYVjCV1YfEVv><button type="button" class="btn btn-primary">CCit Assessment</button></a>
+            <a target="_blank" href="https://harvard.az1.qualtrics.com/jfe/form/SV_7UMdYVjCV1YfEVv"><button type="button" class="btn btn-primary">CCit 评估</button></a>
             <br/><br/>
           </div>
           <div class="col-sm">
-            <b style="font-family: 'Source Sans Pro', sans-serif;">填写下面的表格以注册课程。  </b>
+            <b>填写下方表格以注册课程。</b>
             <br/><br/>
-            <a href="https://forms.gle/MxoHY1yKW7T2bUQS7"><button type="button" class="btn btn-danger">Sign Up</button></a>
+            <a href="https://forms.gle/MxoHY1yKW7T2bUQS7"><button type="button" class="btn btn-danger">报名</button></a>
             <br/><br/>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
 
-  <!-- Footer Import--><footer id="footer-placeholder"></footer><!--End Footer Import-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer Import--><div id="footer-placeholder"></div><!--End Footer Import-->
 
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script>
     $(function(){
-      $("#nav-placeholder").load("https://pbhachinatowncitizenship.com/import/navch.html");
-      $("#footer-placeholder").load("https://pbhachinatowncitizenship.com/import/footer.html");
+      $("#nav-placeholder").load("includes/navch.html");
+      $("#footer-placeholder").load("includes/footer.html");
     });
   </script>
-
 </body>
-
 
 </html>
