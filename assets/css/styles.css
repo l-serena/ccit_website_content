@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --font-serif: 'Libre Baskerville', Georgia, 'Times New Roman', Times, serif;
+  --font-serif-display: 'Cormorant Garamond', Georgia, 'Times New Roman', Times, serif;
+  --lang-banner-height: 2.75rem;
+  --nav-height: 4.75rem;
+}
+
+body {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  padding-top: var(--nav-height);
+}
+
+body.has-lang-banner {
+  padding-top: calc(var(--nav-height) + var(--lang-banner-height));
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar-brand,
+.carousel-caption h3,
+.jumbotron b {
+  font-family: var(--font-serif-display);
+  font-weight: 600;
+}
+
+#nav-placeholder .navbar.fixed-top {
+  min-height: var(--nav-height);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#nav-placeholder .navbar-brand {
+  font-size: 1.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-nav .nav-link {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.lang-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1060;
+  height: var(--lang-banner-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1c1c1c;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.lang-banner__group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lang-banner__btn {
+  font-family: var(--font-serif-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  color: #e8e0d4;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+  padding: 0.2rem 0.85rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+a.lang-banner__btn:hover,
+a.lang-banner__btn:focus {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.55);
+  outline: none;
+  text-decoration: none;
+}
+
+.lang-banner__btn--active {
+  color: #1c1c1c;
+  background: #f8f4ec;
+  border-color: #f8f4ec;
+  cursor: default;
+}
+
+body.has-lang-banner #nav-placeholder .navbar.fixed-top {
+  top: var(--lang-banner-height);
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.section:hover {
+  background-color: #f2f2f2;
+  transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.padding-0 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --lang-banner-height: 2.5rem;
+    --nav-height: 4.5rem;
+  }
+
+  .lang-banner__btn {
+    font-size: 0.95rem;
+    padding: 0.15rem 0.65rem;
+  }
+
+  #nav-placeholder .navbar-brand {
+    font-size: 1.15rem;
+  }
+}
