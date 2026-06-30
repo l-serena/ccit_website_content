@@ -49,9 +49,6 @@ function head($num) { ob_start(); ?>
         <!-- Custom styles for this template -->
         <link href="../assets/css/custom.css" rel="stylesheet">
 
-        <!-- Flashcard JS -->
-        <script type="text/javascript" src="../assets/js/apicalls.js"></script>
-
     </head>
 
     <body id="page-top">
@@ -77,7 +74,7 @@ function head($num) { ob_start(); ?>
                     <a class="nav-link" href="../other.html">Other Resources</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href="../../index.html">Home</a>
                     </li>
                 </ul>
                 </div>

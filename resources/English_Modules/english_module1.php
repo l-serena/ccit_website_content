@@ -169,17 +169,11 @@
   </div>
 </section>
 <script>
-  function conv(){
-      <?php for ($i = 1 ; $i < 60 ; $i++) { ?>
-          fetchChinese('<?php echo $i ?>', document.getElementById('<?php echo $i ?>').innerHTML);
-      <?php } ?>
-      $('[data-toggle="tooltip"]').tooltip();
-  }
-  function say( k ){
-            var synth = window.speechSynthesis;
-            var speech = new SpeechSynthesisUtterance(document.getElementById(''+k).innerHTML);
-            speech.lang = 'en-US';
-            synth.speak(speech);
+  function say(k) {
+    var synth = window.speechSynthesis;
+    var speech = new SpeechSynthesisUtterance(document.getElementById('' + k).innerHTML);
+    speech.lang = 'en-US';
+    synth.speak(speech);
   }
 </script>
 <?php echo foot()?>
